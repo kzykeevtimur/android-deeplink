@@ -11,7 +11,7 @@
         - demand - ссылки доступны только клиентам
         - general - ссылки доступны всем пользователям
     - объект:
-        - profile - открывает профиль иполнителя или клиента
+        - profile - открывает профиль исполнителя или клиента
         - support - открывает чат поддержки
         - task-card - открывает задание исполнителя
         - tutorial - открывает инструкцию исполнителю
@@ -37,11 +37,11 @@
 ### Примеры
 - https://com.example/general/profile?mode=edit
   Открывает профиль исполнителя или клиента в режиме редактирования
-- https://com.example/supply/taskCard?id=10
-  Открывает задание исполнителя с id 10
 - https://com.example/general/support
   Открывает чат поддержки
-- https://com.example/supply/supply/tutorial-list?type=money_withdraw
-  Открывает инстукцию по выводу денег
+- https://com.example/supply/taskCard?id=10
+  Открывает задание исполнителя с id 10
+- https://com.example/supply/tutorial-list?type=money_withdrawal
+  Открывает инструкцию по выводу денег
 - https://com.example/demand/project?id=2&filter=active
   Открывает экран проекта с id 2. Показываются только активные задания

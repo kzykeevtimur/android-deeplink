@@ -8,7 +8,7 @@ class DeeplinkInteractorTest {
     private val interactor = DeeplinkInteractor()
 
     @Test
-    fun `general profile deeplink, wrong mode view, parse success`() {
+    fun `general profile deeplink, wrong mode, parse error`() {
         // given
         val deeplink = "https://com.example/general/profile?mode=open"
         val expected = GetDeeplinkError
@@ -21,10 +21,10 @@ class DeeplinkInteractorTest {
     }
 
     @Test
-    fun `general profile deeplink, mode view, parse success`() {
+    fun `general profile deeplink, mode edit, parse success`() {
         // given
-        val deeplink = "https://com.example/general/profile?mode=view"
-        val mode = "view"
+        val deeplink = "https://com.example/general/profile?mode=edit"
+        val mode = "edit"
         val expected = GetDeeplinkSuccess(
             GeneralProfileDeeplink(mode)
         )
@@ -68,8 +68,8 @@ class DeeplinkInteractorTest {
     @Test
     fun `supply tutorial deeplink, money withdraw tutorial, parse success`() {
         // given
-        val deeplink = "https://com.example/supply/supply/tutorial-list?type=money_withdraw"
-        val type = "money_withdraw"
+        val deeplink = "https://com.example/supply/tutorial-list?type=money_withdrawal"
+        val type = "money_withdrawal"
         val expected = GetDeeplinkSuccess(
             SupplyTutorialDeeplink(type)
         )
