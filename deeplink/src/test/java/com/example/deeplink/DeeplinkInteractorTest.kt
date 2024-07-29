@@ -66,9 +66,9 @@ class DeeplinkInteractorTest {
     }
 
     @Test
-    fun `supply tutorial deeplink, money withdraw tutorial, parse success`() {
+    fun `supply tutorial deeplink, money withdrawal tutorial, parse success`() {
         // given
-        val deeplink = "https://com.example/supply/tutorial-list?type=money_withdrawal"
+        val deeplink = "https://com.example/supply/tutorial?type=money_withdrawal"
         val type = "money_withdrawal"
         val expected = GetDeeplinkSuccess(
             SupplyTutorialDeeplink(type)
