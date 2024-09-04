@@ -34,7 +34,7 @@ android {
 
 dependencies {
     testImplementation(libs.junit)
-//    testImplementation(libs.androidx.junit)
-//    testImplementation(libs.robolectric)
-//    testImplementation(libs.bundles.mockito)
+    testImplementation(libs.androidx.junit)
+    testImplementation(libs.robolectric)
+    testImplementation(libs.bundles.mockito)
 }

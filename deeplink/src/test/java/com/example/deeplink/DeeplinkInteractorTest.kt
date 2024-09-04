@@ -1,8 +1,14 @@
 package com.example.deeplink
 
+import android.os.Build
 import org.junit.Assert
 import org.junit.Test
+import org.junit.runner.RunWith
+import org.robolectric.annotation.Config
+import androidx.test.ext.junit.runners.AndroidJUnit4
 
+//@RunWith(AndroidJUnit4::class)
+//@Config(sdk = [Build.VERSION_CODES.P])
 class DeeplinkInteractorTest {
 
     private val interactor = DeeplinkInteractor()
